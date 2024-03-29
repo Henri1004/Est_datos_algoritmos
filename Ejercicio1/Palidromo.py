@@ -15,20 +15,7 @@ class Palindromo():
             else:
                 return False
         return True
-
-    def test(self):
-        palabra_atributo = str(self.atributo).replace(' ', '').lower()
-        for i in range(len(palabra_atributo)//2):
-            if palabra_atributo[i] != palabra_atributo[-i-1]:
-                return False
-            else:
-                return True
     
-    def palabra_mayuscula(self):
-        print(self.atributo.upper())
-
 
 print(Palindromo.esPalindromo(Palindromo('radar')))
 # >>> True
-p = Palindromo("radar") 
-print(p.test()) 
